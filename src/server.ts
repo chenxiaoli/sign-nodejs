@@ -15,9 +15,11 @@ app.get('/', (req: any, res: any) => res.send('Hello World!'));
 
 app.post('/sign', async function (req: any, res: any) {
   const data=req.body["data"]
+  console.log(data)
   const signer=new Wallet(privateKey)
 
   const signature= await signer.signMessage(data)
+  console.log(JSON.stringify({data,signature}))
   res.send(JSON.stringify({data,signature}));
 
 });

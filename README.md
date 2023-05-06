@@ -17,3 +17,6 @@ ubuntu，nodejs
 path: /sign
 method: post
 request body: {data:"string,签名的数据"}
+
+
+curl -H "Content-Type: application/json" -X POST -d '{"data": "123"}' "http://127.0.0.1:3000/sign"

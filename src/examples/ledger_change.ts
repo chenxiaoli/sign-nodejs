@@ -15,7 +15,7 @@ async function change(data: ChangeData) {
 
 
     const res=await axios.post(
-        'http://localhost:3000/sign',
+        'http://127.0.0.1:3000/sign',
         { data: msg},
     );
 
@@ -38,8 +38,8 @@ async function change(data: ChangeData) {
 // 给uer_id 3 加1积分
 change({
     user_id: 3,
-    value: 1,
+    value: 500,
     currency_id: 1,
     memo: "测试",
-    request_id: '47f867fcbfca11ed960af6f1f6ea4462'
+    request_id: '47f86111b1ca12ed911af6f1f1114412'
 })

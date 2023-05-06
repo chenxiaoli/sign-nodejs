@@ -1,4 +1,4 @@
-export const privateKey="填入你的钱包私钥"
-export const address="填入你钱包地址"
+export const privateKey="0xc978e176ae63f038599830144b68e7fa78de7ada05e2764ed65db4c3da0bfbd0"
+export const address="0x40D31c398c7EA80aEf66DB4A359760df5ef0A88d"
 
  
